@@ -44,8 +44,39 @@ def plus10(n):
 list1 = [1, 2, 3, 4, 5]
 list1_map = map(plus10, list1)
 print('list1_map :', list1_map) # 함수를 list로 변환 안해서 그럼
-list1_map_list = list(list1_map) # map함수를 list로 변환
+list1_map_list = list(list1_map) # map객체(함수)를 list로 변환
 print('list1_map_list :', list1_map_list)
 
-# input 함수
+list2 = [1.1, 2.2, 3.3, 4.4, 5.5]
+list2_map = map(int, list2)
+list2_map_list = list(list2_map)
+print('list2_map_list :', list2_map_list)
 
+list3 = [1, 2, 3, 4, 5]
+list3_map = map(lambda x:x*2 , list3)
+list3_map_list = list(list3_map)
+print('list3_map_list :', list3_map_list)
+
+list4 = ['1', '2', '3', '4', '5']
+list4_map = map(int, list4)
+list4_map_list = list(list4_map)
+print('list4_map_list :', list4_map_list)
+
+
+# input 함수의 확장
+a = input('입력 :')
+print('a :', a)
+
+var1, var2, var3 = input('3개의 숫자 입력(띄어씌기 구분) : ').split()
+print('var1 :', var1)
+print('var2 :', var2)
+print('var3 :', var3)
+print('var1 +var2 + var3 :', var1 + var2 + var3)
+
+print('num1, num2, num3 데이터 순서대로 입력(띄어쓰기 구분)')
+num1, num2, num3 = map(int, input().split())
+print('num1 + num2 + num3 :', num1 + num2 + num3)
+
+print('list_data에 입력할 데이터 순서대로 입력(띄어쓰기 구분)')
+list_data = list(map(int, input().split()))
+print('list_data :', list_data)
