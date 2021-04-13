@@ -4,6 +4,9 @@
 내용 : 파이썬 클래스 실습하기 교재 p148
 """
 from Ch06.sub1.Account import Account
+
+from Ch06.sub1.Computer import Computer
+
 # 객체 생성
 kb = Account('국민은행', '121-12-1111', '김유신', 10000)
 wr = Account('우리은행', '112-12-1919', '김춘추', 20000)
@@ -15,3 +18,8 @@ kb.show()
 wr.deposit(10000)
 wr.withdraw(7000)
 wr.show()
+
+# Computer 객체 생성
+Samsung = Computer('Intel i7', '64GB', '1TB')
+Samsung.calc()
+Samsung.info()
