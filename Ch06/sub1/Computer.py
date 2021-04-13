@@ -2,9 +2,9 @@ class Computer:
 
     # 속성
     def __init__(self, cpu, ram, hdd):
-        self.cpu = cpu
-        self.ram = ram
-        self.hdd = hdd
+        self._cpu = cpu
+        self._ram = ram
+        self._hdd = hdd
 
     # 기능
     def calc(self):
@@ -12,6 +12,6 @@ class Computer:
 
     def info(self):
         print('------------')
-        print('cpu :', self.cpu)
-        print('ram :', self.ram)
-        print('hdd :', self.hdd)
+        print('cpu :', self._cpu)
+        print('ram :', self._ram)
+        print('hdd :', self._hdd)

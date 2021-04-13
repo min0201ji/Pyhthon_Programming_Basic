@@ -12,6 +12,6 @@ kb.withdraw(5000)
 
 # 캡슐화 적용으로 취약코드를 예방한다.
 # 캡슐화 방법 : 멤버변수에 __를 선언
-# kb.money -= 1 -> 이렇게 해도 sub1의 account에서 __사용해서 캡슣
+# kb.money -= 1 -> 이렇게 해도 sub1의 account에서 __사용해서 캡슐
 
 kb.show()
