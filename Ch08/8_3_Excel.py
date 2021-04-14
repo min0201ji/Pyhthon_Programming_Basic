@@ -4,9 +4,13 @@
 내용 : 파이썬 외부 패키지 설치, 특수파일 실습 교재 p239
 """
 from openpyxl import Workbook
+import pandas as pd
+
+# Excel 파일 읽기
+exam = pd.read_excel('./data/exam.xlsx')
+print(exam)
 
 # Excel 파일쓰기
-
 # 새로운 엑셀파일 생성
 workbook = Workbook()
 
