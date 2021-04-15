@@ -13,7 +13,7 @@ def gcd(a, b):
         temp = b
 
     while True:
-        if #
+        if #a % temp == 0 and b % temp == 0:
             break
 
         temp -= 1

@@ -10,12 +10,12 @@ while True:
     print('0:종료, 1:입력')
     result = input('입력 :')
 
-    if #scores <= 0:
+    if #result == '0': #0은 숫자가 아니라 문자열이기 때문에 ''입력
         break
 
     score = int(input('점수입력'))
 
-    #
+    #scores.append(score)
 
 print('입력한 점수 확인')
 print(scores)

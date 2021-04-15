@@ -20,11 +20,11 @@ while True:
         number = int(number)
     except:
         print('숫자를 입력하십시요!')
-        #
+        #continue
 
     if number < 0:
         print('음수를 입력 할 수 없습니다.')
-        #
+        #continue
 
     if answer > number:
         print('더 큰 수를 입력하세요.')
@@ -34,8 +34,8 @@ while True:
 
     else:
         print('정답 :', answer)
-        print('맞추셨습니다!)
+        print('맞추셨습니다!')
         print('시도횟수 : %d회' % count)
-        #
+        #break
 
 print('프로그램 정상종료...')

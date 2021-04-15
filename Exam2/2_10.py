@@ -14,9 +14,9 @@ def game():
                 raise ValueError
         except ValueError:
             print('잘못 입력 하셨습니다.')
-            #
+            #continue
         else:
-            #
+            #break
     
     com_word = random.choice(words)
     print('컴퓨터 결과 :', com_word)
@@ -41,7 +41,7 @@ def game():
         print('무승부')
 
 while True:
-    #
+    #game()
     print('0:종료, 1:한번 더하기')
     again = int(input('입력 : '))
 

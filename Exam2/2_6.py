@@ -10,11 +10,11 @@ class Person:
     def work(self):
         print('%s working...' % self.name)
 
-class #Student:
+class #Student(Person): -line7번에서 이름 가져옴, 그래서 person상속받음
     def work(self):
         print('%s studying...' % self.name)
 
-class #Developer:
+class #Developer(Person): -line7번에서 이름 가져옴, 그래서 person 상속받음
     def work(self):
         print('%s programming...' % self.name)
 

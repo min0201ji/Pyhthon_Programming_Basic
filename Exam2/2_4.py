@@ -13,7 +13,7 @@ def lotto():
     while True:
         num = math.ceil(random.random() * 45)
 
-        #
+        #lotto_set.add(num) -중복제거를 위해 집합사용!
 
         if len(lotto_set) == 6:
             break
