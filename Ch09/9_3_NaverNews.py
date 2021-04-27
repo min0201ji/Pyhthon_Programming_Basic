@@ -1,7 +1,7 @@
 """
 이름 : 박민지
 날짜 : 2021/04/26
-내용 : 파이썬 Naver 뉴스 크롤링 실습하기
+내용 : 파이썬 Naver 뉴스 크롤링 실습하기 (주소를 이용한 크롤링)
 """
 import requests as req
 from bs4 import BeautifulSoup as bs
